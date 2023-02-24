@@ -1,0 +1,163 @@
+name: thepublictransport_app
+description: Die erste moderne App für den öffentlichen Verkehr
+version: 2.7.0+27
+author: Tristan Marsell, The Public Transport
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # UI
+  transformer_page_view: 0.1.6
+  flutter_vector_icons: 0.2.1
+  community_material_icon: 3.5.95
+  flutter_swiper: ^1.1.6
+  flare_flutter: 1.5.8
+  flutter_speed_dial: 1.2.1
+  bubble_bottom_bar: ^1.2.0
+  cupertino_icons: ^0.1.2
+  google_maps_flutter: ^0.5.21+8
+  sliding_up_panel: ^0.3.6
+  flutter_spinkit: 3.1.0
+  flutter_typeahead: 1.6.1
+  curved_navigation_bar: 0.3.1
+  morpheus: 1.2.2+1
+  sliding_panel: 0.5.0+2
+  quick_actions: 0.3.2+2
+
+  # Tools
+  http: ^0.12.0+2
+  sprung: 1.1.0+11
+  geolocator: ^5.1.4+2
+  url_launcher: 5.1.2
+  uni_links: 0.2.0
+  share: 0.6.2+1
+  device_info: 0.4.0+2
+  flutter_svg: 0.14.1
+  dio: 3.0.3
+  dio_flutter_transformer: ^3.0.2
+  dio_http2_adapter: 1.0.0
+  dio_http_cache: ^0.2.1
+  device_apps: 1.0.8
+  intl: ^0.15.8
+  rxdart: ^0.22.5
+  flutter_bloc: 1.0.0
+
+  # Database
+  sembast: 2.0.1+2
+  path_provider: 1.3.0
+  toast: ^0.1.5
+  preferences: ^5.0.1
+  shared_preferences: 0.5.2
+
+  # Firebase
+  firebase_messaging: 5.1.5
+  firebase_analytics: 5.0.2
+  firebase_crashlytics: 0.1.0+3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic pDart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #  - images/a_dot_burr.jpeg
+  #  - images/a_dot_ham.jpeg
+
+  assets:
+    - icons/fluxfail.png
+    - icons/anja.png
+    - icons/marker.png
+    - icons/marker_tier.png
+    - icons/marker_voi.png
+    - icons/marker_circ.png
+    - icons/marker_nextbike.png
+    - anim/error.flr
+    - anim/loader.flr
+    - anim/cloud_loading.flr
+    - anim/dark_background.flr
+    - anim/light_background.flr
+    - anim/hey_minion.flr
+    - anim/route.flr
+    - locale/i18n_de.json
+    - locale/i18n_en.json
+    - locale/i18n_es.json
+    - locale/i18n_fr.json
+
+  fonts:
+    - family: Nunito
+      fonts:
+          - asset: fonts/Nunito-Regular.ttf
+
+    - family: NunitoSemiBold
+      fonts:
+          - asset: fonts/Nunito-SemiBold.ttf
+
+    - family: NunitoBold
+      fonts:
+          - asset: fonts/Nunito-Bold.ttf
+
+    - family: NunitoLight
+      fonts:
+          - asset: fonts/Nunito-Light.ttf
+
+
+    - family: NunitoSans
+      fonts:
+          - asset: fonts/NunitoSans-Regular.ttf
+
+    - family: NunitoSansSemiBold
+      fonts:
+          - asset: fonts/NunitoSans-SemiBold.ttf
+
+    - family: NunitoSansBold
+      fonts:
+          - asset: fonts/NunitoSans-Bold.ttf
+
+    - family: NunitoSansLight
+      fonts:
+          - asset: fonts/NunitoSans-Light.ttf
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages
